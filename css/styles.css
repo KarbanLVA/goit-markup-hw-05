@@ -284,17 +284,19 @@ img {
   position: relative;
 }
 .srvcs-subitem-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 27px 0;
+  height: 70px;  
   background-color: rgba(47, 48, 58, 0.8);
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
+  line-height: 1.14; 
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-white-color);
@@ -388,10 +390,10 @@ img {
 }
 .customer-list {
   display: flex;
-  list-style: none;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  list-style: none;
 }
 .customer-list-item:not(:last-child) {
   margin-right: 30px;
@@ -454,7 +456,7 @@ img {
   color: var(--main-black-color);
   cursor: pointer;
 
-  transition: background-color, color, box-shadow var(--transition-origin);
+  transition: background-color var(--transition-origin), color var(--transition-origin),          box-shadow var(--transition-origin);
 }
 .prtfl-button-item:hover,
 .prtfl-button-item:focus {
@@ -505,8 +507,8 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  transform: translateY(100%);
-  
+
+  transform: translateY(100%);  
   transition: transform var(--transition-origin);
 
   background-color: rgba(33, 150, 243, 0.9);
